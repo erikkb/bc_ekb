@@ -1,0 +1,130 @@
+.bc__brand {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    margin: 3rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(8, 65, 122, 0.829) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(8, 65, 122, 0.829) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(8, 65, 122, 0.829) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(8, 65, 122, 0.829) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, rgb(11, 16, 88) 25%, rgba(11, 57, 104, 0.83) 86%, rgb(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bc__brand-feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.bc__brand-feature .bc__features-container__feature {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.bc__brand-feature .bc__features-container_feature-text {
+    max-width: 700px;
+}
+
+.bc__brand-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.bc__brand-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 670px;
+}
+
+.bc__brand-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.bc__brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.bc__brand-container .bc__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.bc__brand-container .bc__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .bc__brand-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .bc__brand-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .bc__brand-feature .bc__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .bc__brand-feature .bc__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .bc__brand-heading {
+        margin-top: 2rem;
+    }
+
+    .bc__brand-heading h1 {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .bc__brand-container .bc__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

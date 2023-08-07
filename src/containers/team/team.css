@@ -1,0 +1,119 @@
+.bc__team {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.bc__team-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 2rem;
+}
+
+.bc__team-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    
+}
+
+.bc__team-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.bc__team-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bc__team-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bc__team-image img {
+    width: 100%;
+    border: 2px solid #af65f8;
+    border-radius: 0.5rem;
+}
+
+.bc__team-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+    margin-top: 1rem;
+
+}
+
+.bc__team-button {
+    border-radius: 0.4rem;
+    
+}
+
+.bc__team-button img:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #af65f8;
+    transform: translateY(-0.25em);
+}
+
+.bc__team-button img {
+    width: 40px;
+    border: 2px solid #af65f8;
+    border-radius: 0.4rem;
+    transition: all 0.25s;
+}
+
+@media screen and (max-width: 1050px) {
+    .bc__team {
+        flex-direction: column;
+    }
+
+    .bc__team-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bc__team-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .bc__team-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .bc__team-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .bc__team-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

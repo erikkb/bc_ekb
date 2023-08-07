@@ -1,0 +1,25 @@
+@import "~@fontsource/manrope/variable.css";
+
+:root {
+  --font-family: 'ManropeVariable', sans-serif;
+
+  /*--gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%); #ff0baedc
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18; 
+  --color-footer : #031B34; 
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;*/
+  
+  /* --gradient-text: linear-gradient(89.97deg, #7824ba 1.84%, #f30487 102.67%); */
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #ff0baedc 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #ff0baedc 99.55%);
+  
+  /* --color-bg: #000; */
+  /* --color-bg: #040620;  */
+  --color-bg: #030418; 
+  --color-footer : #050833; 
+  --color-text: #d7d7d7;
+  --color-subtext: #FF8A71;
+}

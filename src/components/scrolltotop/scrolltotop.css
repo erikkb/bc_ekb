@@ -1,0 +1,20 @@
+.bc__scrolltotop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    z-index: 9;
+}
+
+.bc__scrolltotop-button {
+    height: 50px;
+    width: 50px;
+
+    background: var(--color-footer);
+    color: #af65f8;
+    border: 2px solid #af65f8;
+    font-size: 45px;
+    font-family: var(--font-family);
+    border-radius: 25px;
+    cursor: pointer;
+}
