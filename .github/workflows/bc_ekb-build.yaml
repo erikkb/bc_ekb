@@ -37,6 +37,7 @@ jobs:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
         run: |
+          npm install
           npm ci
           npm run build
 
@@ -46,7 +47,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
-          project-id: 2e418ff1-6c9f-42f8-b755-d6df09f234f1
+          project-id: 0da97ac6-ba31-4f9a-84a0-fc5abf549b8d
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
