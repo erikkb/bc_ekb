@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: public
+  DEPLOYMENT_FOLDER: build/
 
 jobs:
 # Please do not rename this job
@@ -37,7 +37,6 @@ jobs:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
         run: |
-          npm install
           npm ci
           npm run build
 
@@ -47,7 +46,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
-          project-id: 3914ce1b-adc5-48d8-bd59-e70fe5603d13
+          project-id: 2e418ff1-6c9f-42f8-b755-d6df09f234f1
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
