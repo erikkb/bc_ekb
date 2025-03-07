@@ -13,7 +13,7 @@ const Footer = () => (
     <div className="bc__footer-links">
       <div className="bc__footer-links_logo">
         <img src={bcLogo} alt="bc_logo" />
-        <p>Vertreten durch: <br /> Carsten Brandes <br/> Sunderstraße 41E<br/>31224 Peine</p>
+        <p>Vertreten durch: <br /> Carsten Brandes <br/> Sundernstraße 41E<br/>31224 Peine</p>
       </div>
       <div className="bc__footer-links_div">
         <h4>Kontakt</h4>
